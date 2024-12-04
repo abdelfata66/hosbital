@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ece8e87c;
+    width: 100%;
+    height: 100vh;
+    transition: .5s;
+}
+body.active{
+    background: #000000;
+}
+/* start header */
+header{
+    background-color: rgba(57, 57, 162, 0.836);
+    border-bottom-left-radius: 50px;
+    padding: 20px 60px 45px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .container h1{
+    font-size: 30px;
+    color: #fff;
+}
+header .container .icon{
+    display: flex;
+    width: 13%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header .container .icon #btn1  ,
+header .container .icon #btn2 {
+    font-size: 12px;
+    color: #ffffff;
+}
+.icon .btn{
+    width: 35px;
+    height: 20px;
+    border: 1px solid #fff;
+    border-radius: 60px;
+    position: relative;
+}
+.icon .btn::before{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #fff;
+    border-radius: 50%;
+    top: 50%;
+    left: 2px;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+.icon .btn.active:before{
+    left: 16px;
+}
+
+/* start section */
+section{
+position: relative;
+}
+section .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 85%;
+    margin: 0 auto;
+    position: absolute;
+    top: -20px;
+    left: 70px;
+}
+section .container .search{
+    display: flex;
+    align-items: center;
+}
+section .container  a{
+    font-size: 15px;
+    color: rgba(57, 57, 162, 0.836);
+}
+section .container  input{
+    font-size: 12px;
+    margin-left: 10px;
+    color: #0000009d;
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid rgba(57, 57, 162, 0.836);
+}
+section .container .location{
+    display: flex;
+    align-items: center;
+}
+section .container  p{
+    font-size: 13px;
+    margin-left: 8px;
+    color: #0000009d;
+    text-transform: capitalize;
+}
+section .container .button{
+    display: flex;
+    align-items: center;
+}
+section .container .button h6{
+    margin: 0 10px;
+    font-size: 12px;
+}
+section .container .button .btn{
+    background-color: rgba(57, 57, 162, 0.836);
+    padding: 4px 7px;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    transition: .8s;
+    border: 2px solid rgba(57, 57, 162, 0.836);
+}
+section .container .button .btn:hover{
+    color:rgba(57, 57, 162, 0.836);
+    background-color: #fff;
+}
+
+/* start main */
+main .container{
+    width: 85%;
+    margin: 90px auto 0;
+}
+main .container .boxs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+main .container .box{
+    background-color: #e9e8e8;
+    padding: 0 10px ;
+    border-radius: 8px;
+    margin: 20px 15px 20px 0px;
+    width: 253px;
+}
+main .container .box:nth-child(2) span ,
+main .container .box:nth-child(11) span{
+    background-color: rgb(208, 25, 25);
+    padding: 5px 13px;
+    font-family: 'Franklin Gothic Medium',
+    'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+main .container .box:nth-child(3) span ,
+main .container .box:nth-child(8) span{
+    background-color: rgb(30, 29, 29);
+    padding: 12px 4px;
+    font-size: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+main .container .box:nth-child(4) span ,
+main .container .box:nth-child(9) span{
+    background-color: rgb(57, 27, 112);
+    padding: 12px 4px;
+    font-size: 8px;
+    font-family: 'Courier New', Courier, monospace;
+}
+main .container .box:nth-child(5) span ,
+main .container .box:nth-child(10) span{
+    background-color: rgba(0, 182, 112, 0.81);
+    padding: 11px 7px;
+    font-size: 10px;
+    color: #0000009d;
+}
+main .container .box:nth-child(6) span ,
+main .container .box:nth-child(12) span{
+    background-color: rgba(39, 2, 2, 0.81);
+    padding: 5px 14px;
+    font-size: 20px;
+    color: rgb(255, 6, 6);
+    font-family: 'Franklin Gothic Medium', 
+    'Arial Narrow', Arial, sans-serif;
+}
+main .container .box:nth-child(7) span{
+    background-color: rgb(57, 27, 112);
+    padding: 14px 3px;
+    font-size: 6px;
+    font-family: 'Courier New', Courier, monospace;
+}
+main .container .box span{
+    background-color: #eb6607;
+    color: #fff;
+    padding: 8px 3px;
+    border-radius: 8px;
+}
+main .container .box p{
+    font-size: 11px;
+    margin-top: 20px;
+    color: #0000009d;
+}
+main .container .box h3 , h6{
+    margin-top: 5px;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+main .container .box h6{
+    color: #0000009d;
+    font-size: 12px;
+}
+main .container .box a{
+    display: block;
+    margin: 20px 0;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+main .container .btn{
+    display: block;
+    border: none;
+    background-color: rgba(57, 57, 162, 0.836);
+    padding: 8px 20px;
+    margin: 10px auto;
+    color: #fff;
+    border-radius: 8px;
+    text-transform: capitalize;
+    transition: .8s;
+    border: 2px solid rgba(57, 57, 162, 0.836);
+}
+main .container .btn:hover{
+    color:rgba(57, 57, 162, 0.836);
+    background-color: #fff;
+
+}
